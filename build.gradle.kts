@@ -26,6 +26,8 @@ dependencies {
 	testImplementation("org.springframework.security:spring-security-test")
 	implementation("com.auth0:java-jwt:3.10.2")
 	implementation("org.springframework.boot:spring-boot-starter-mustache")
+	implementation ("io.github.microutils:kotlin-logging-jvm:2.0.2")
+	//implementation("org.slf4j:slf4j-log4j12:1.7.5")
 	runtimeOnly("org.postgresql:postgresql")
 	implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
 }
