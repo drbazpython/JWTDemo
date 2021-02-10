@@ -30,7 +30,7 @@
 </appender>
 
 <logger name="com.drbaz.auth.demo" level="TRACE" >
-    <appender-ref ref="ROLLING-FILE"/>
+    <appender-ref ref="STDOUT"/>
 </logger>
 <logger name="org.hibernate" level="INFO" />
 
