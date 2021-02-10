@@ -21,12 +21,12 @@ class DemoApplication (val userRepository: AppUserRepository
 	private val logger = KotlinLogging.logger{}
 
 	override fun run(args: ApplicationArguments) {
-		logger.trace{ "Dropped database tables and recreated" }
+		//logger.trace{ "Dropped database tables and recreated" }
 		val user1 = AppUser(9999, "barrie", passwordEncoder.encode("Hydrogen1"),"Barrie","Smith")
 		val user2 = AppUser(8888, "hazel", passwordEncoder.encode("Hydrogen1"), "Hazel", "Smith")
 		userRepository.save(user1)
 		userRepository.save(user2)
-		logger.trace{"Created two users: ${user1.username} and ${user2.username}"}
+		//logger.trace{"Created two users: ${user1.username} and ${user2.username}"}
 	}
 
 	@Bean
